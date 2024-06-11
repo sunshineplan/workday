@@ -15,7 +15,7 @@ import (
 
 var (
 	server = httpsvr.New()
-	c      = cache.New(true)
+	c      = cache.New[string, workday.Response](true)
 )
 
 func run() error {
@@ -51,7 +51,7 @@ func run() error {
 func isWorkday(t time.Time) (resp workday.Response, err error) {
 	date := t.Format("20060102")
 	if v, ok := c.Get(date); ok {
-		return v.(workday.Response), nil
+		return v, nil
 	}
 	resp.Workday, err = workday.IsWorkday(t, timor.API, apihubs.API)
 	if err != nil {
