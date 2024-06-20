@@ -5,7 +5,7 @@ go 1.22
 require (
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/sunshineplan/service v1.0.20
-	github.com/sunshineplan/utils v0.1.68
+	github.com/sunshineplan/utils v0.1.69
 	github.com/sunshineplan/workday v0.0.0-00010101000000-000000000000
 )
 
