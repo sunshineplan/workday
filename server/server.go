@@ -15,7 +15,7 @@ import (
 
 var (
 	server = httpsvr.New()
-	c      = cache.New[string, workday.Response](true)
+	c      = cache.NewWithRenew[string, workday.Response](true)
 )
 
 func run() error {
