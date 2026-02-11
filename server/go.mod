@@ -1,11 +1,11 @@
 module workday
 
-go 1.25
+go 1.26
 
 require (
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/sunshineplan/service v1.0.26
-	github.com/sunshineplan/utils v0.1.83
+	github.com/sunshineplan/utils v0.1.84
 	github.com/sunshineplan/workday v0.0.0-00010101000000-000000000000
 )
 
